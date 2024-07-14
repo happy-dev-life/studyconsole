@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: studyconsole
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:default}
+
+aws:
+  credentials:
+    access-key: ${AWS_ACCESS_KEY} # Not recommended for production
+    secret-key: ${AWS_SECRET_KEY} # Not recommended for production
+  region: us-west-2
